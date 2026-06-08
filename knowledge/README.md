@@ -6,6 +6,11 @@ Reusable project knowledge collected from planning, research, and AI-assisted de
 
 - [Java lifecycle and mathematical modeling practices](java/java-lifecycle-modeling-github-practices.md)
 
+## AI Development
+
+- [Matt Pocock skills summary](ai-development/matt-pocock-skills-summary.md)
+- [Superpowers agentic skills summary](ai-development/superpowers-agentic-skills-summary.md)
+
 ## RuoYi-Vue-Pro
 
 - [RuoYi GitHub projects and codegen-bot guide](ruoyi-vue-pro/github-projects-guide.md)
