@@ -1,103 +1,135 @@
-# Admin And Low-Code Project Database Notes
+# Knowledge Skill Library
 
-This repository collects a short, practical comparison of open-source projects adjacent to `gin-vue-admin` and `RuoYi-Vue-Pro`: admin platforms, low-code/internal-tool builders, CMS systems, and automatic API platforms, grouped by whether they naturally lean toward PostgreSQL or MySQL.
+这个仓库用来保存我对不同项目、框架、工具和技术方案的对比知识，方便以后快速回顾、理解和决策。
 
-## Reusable Library Sections
+它的核心作用不是记录某个项目当前进度，也不是替代具体项目的 README，而是沉淀“我为什么这样选、这些项目有什么差异、各自适合什么场景、以后再遇到类似问题应该参考什么”。
 
-- [Knowledge library](knowledge/README.md): reusable project planning, Java modeling, RuoYi-Vue-Pro, and model-card notes.
-- [Skill library](skills/README.md): reusable Codex skill structures and model-card templates.
+## 这个仓库是做什么的
 
-## Conclusion
+我会把一些项目对比、技术选型、框架研究、业务方案比较和 AI/Agent 方法总结放在这里，例如：
 
-For `gin-vue-admin` itself, MySQL is still the lower-friction choice because its default configuration and ecosystem path are MySQL-first. `RuoYi-Vue-Pro` and many similar Java/Vue admin systems also sit naturally in the MySQL ecosystem. If the goal is to study projects where PostgreSQL is a natural center of gravity, the best references are Directus, Baserow, ToolJet, Hasura, Supabase, Teable, Payload CMS, and Strapi.
+- ERPNext 和 RuoYi / Yudao 在业务后台、财务、流程、扩展方式上的差异。
+- RuoYi-Vue-Pro / Yudao 生态中 clone-bot、codegen-bot、业务后台仓库之间的关系。
+- 不同 AI Agent skill / prompt / workflow 方法的比较和总结。
+- Java、建模、代码生成、项目规划等长期可复用经验。
+- 某个业务方向中多个实现方案的优缺点、适用场景和后续判断依据。
 
-## PostgreSQL-Oriented Projects
+这些内容的目标是：
 
-| Rank | Project | GitHub | Main Language | Positioning | PostgreSQL Fit |
-|---:|---|---|---|---|---|
-| 1 | Directus | `directus/directus` | TypeScript | Turns a database into an admin app, headless CMS, APIs, auth, and permissions | Strong fit. Very useful if you like database-first systems. Official Docker setups commonly use Postgres/PostGIS. |
-| 2 | Baserow | `baserow/baserow` | Python / TypeScript | Open-source Airtable-like low-code data platform | Strong fit. PostgreSQL is central to its storage model. |
-| 3 | ToolJet | `ToolJet/ToolJet` | JavaScript / TypeScript | Open-source Retool-style internal tool builder | Strong fit. Docker Compose includes Postgres and PostgREST. Good for internal tools and dashboards. |
-| 4 | Hasura GraphQL Engine | `hasura/graphql-engine` | Haskell | Auto-generates GraphQL APIs, permissions, and subscriptions from PostgreSQL | Very strong fit. PostgreSQL-first by design. |
-| 5 | Supabase | `supabase/supabase` | TypeScript | Postgres application platform with Auth, Storage, Realtime, Edge Functions | Very strong fit. The whole platform is built around PostgreSQL. |
-| 6 | Teable | `teableio/teable` | TypeScript | No-code Postgres / Airtable alternative | Strong fit. The product positioning itself is Postgres-centered. |
-| 7 | Payload CMS | `payloadcms/payload` | TypeScript | Headless CMS and full-stack admin framework | Good fit. Supports PostgreSQL and provides official Postgres templates. |
-| 8 | Strapi | `strapi/strapi` | TypeScript | Headless CMS and admin panel | Moderate fit. Commonly used with PostgreSQL in production, but not strictly PostgreSQL-first. |
+1. 帮我自己快速恢复上下文。
+2. 避免重复研究同一类项目和工具。
+3. 为后续项目选型提供依据。
+4. 给 AI Agent 提供更稳定的背景知识。
+5. 把零散讨论沉淀成可搜索、可复用的知识。
 
-## How To Read The PostgreSQL List
+## 不是什么
 
-If you want alternatives or reference ideas close to `gin-vue-admin`, start with:
+本仓库不是：
 
-1. Directus
-2. ToolJet
-3. Baserow
-4. Payload CMS
+- 某个具体业务项目的代码仓库。
+- 某个产品的实时项目管理看板。
+- Issue / PR / 部署状态记录库。
+- 聊天记录归档库。
+- 存放密钥、服务器信息、客户隐私或未授权资料的地方。
 
-If you want PostgreSQL-first platform architecture, start with:
+具体项目的当前进度、部署方式、Issue、PR、代码说明，应放在对应项目仓库里。这里主要保存经过提炼后的对比知识和长期判断。
 
-1. Supabase
-2. Hasura
-3. Teable
-4. Baserow
+## 目录结构
 
-If you only want projects that naturally choose PostgreSQL for production, focus on:
+```text
+knowledge-skill-library/
+├── README.md                         # 本仓库说明
+├── knowledge/                        # 项目对比、技术选型、业务理解和长期知识
+│   ├── README.md                     # Knowledge 索引
+│   ├── ai-development/               # AI 开发、Agent 方法论
+│   ├── java/                         # Java / 生命周期 / 建模实践
+│   ├── model-cards/                  # 模型卡与需求表达样例
+│   └── ruoyi-vue-pro/                # RuoYi/Yudao 相关对比与复用知识
+├── skills/                           # 可复用技能、模板、检查清单
+│   ├── README.md                     # Skill 索引
+│   ├── project-planning/             # 项目规划、模型卡、技能结构
+│   └── skill-sources/                # 外部工程技能模式整理
+├── docs/                             # 主题性综合文档
+└── *.json / *.xlsx / *.md            # 待整理原始资料或历史资料
+```
 
-1. Directus
-2. Baserow
-3. ToolJet
-4. Hasura
-5. Supabase
+## 内容应该怎么放
 
-## MySQL-Oriented Admin Projects
+### 放到 `knowledge/`
 
-These projects are closer to `gin-vue-admin` and `RuoYi-Vue-Pro`: traditional business admin scaffolds, RBAC systems, code generators, workflow modules, and enterprise CRUD platforms. Their default docs, ecosystem, or common production path usually make MySQL the simplest choice.
+适合保存“我知道了什么 / 我怎么判断”：
 
-| Rank | Project | GitHub | Main Language | Positioning | MySQL Fit |
-|---:|---|---|---|---|---|
-| 1 | RuoYi-Vue-Pro | `YunaiV/ruoyi-vue-pro` | Java | Spring Boot + MyBatis Plus + Vue admin system with SaaS, workflow, CRM, ERP, MES, AI, IoT, payment, and mall modules | Very strong fit. MySQL is the most natural deployment path for this ecosystem. |
-| 2 | gin-vue-admin | `flipped-aurora/gin-vue-admin` | Go | Gin + Vue3 admin and development platform with RBAC, dynamic routes, code generator, form generator, import/export, MCP, and AI-assisted features | Very strong fit. The default config is `db-type: mysql`. |
-| 3 | RuoYi-Vue | `yangzongzhuan/RuoYi-Vue` | Java | Official RuoYi Spring Boot + Spring Security + JWT + Vue permission management system | Very strong fit. Classic MySQL-backed Chinese enterprise admin scaffold. |
-| 4 | RuoYi-Cloud | `yangzongzhuan/RuoYi-Cloud` | Java | Official RuoYi Spring Cloud + Alibaba microservice permission management system | Strong fit. MySQL is the common operational baseline. |
-| 5 | JeecgBoot | `jeecgboot/JeecgBoot` | Java | AI low-code and zero-code platform with code generation, online configuration, forms, workflow, knowledge base, and model integrations | Strong fit. Commonly deployed with MySQL in Java enterprise environments. |
-| 6 | RuoYi-Vue-Plus | `dromara/RuoYi-Vue-Plus` | Java | Enhanced RuoYi-Vue rewrite with MyBatis-Plus, Undertow, Knife4j, Hutool, and enterprise improvements | Strong fit. Follows the RuoYi/MyBatis/MySQL mainstream path. |
-| 7 | RuoYi-Cloud-Plus | `dromara/RuoYi-Cloud-Plus` | Java | Upgraded RuoYi-Cloud rewrite with Spring Cloud Alibaba, Dubbo, MQ, OSS, ES, Xxl-Job, and Docker | Strong fit. MySQL remains the default business data store in this stack family. |
-| 8 | Pig | `pig-mesh/pig` | Java | Spring Cloud / Spring Boot / OAuth2 RBAC permission management platform | Strong fit. Typical Java microservice admin stack with MySQL-friendly schema and MyBatis-style ecosystem. |
-| 9 | Guns | `stylefeng/Guns` | Java / Vue | Spring Boot 3 + Vue 3 enterprise application development framework | Strong fit. Traditional Java enterprise admin framework, naturally MySQL-friendly. |
-| 10 | GoAdmin | `go-admin-team/go-admin` | Go | Gin + Vue / Element UI / Arco / Ant Design admin scaffold with RBAC, multi-tenant support, code generator, forms, and scheduled tasks | Strong fit. Similar to GVA in shape; MySQL is a straightforward production choice. |
-| 11 | FastAdmin | `fastadminnet/fastadmin` | PHP / JavaScript | ThinkPHP + Bootstrap rapid admin framework with CRUD generation, menus, model/controller/view generation, and recycle bin | Strong fit. PHP admin ecosystem commonly uses MySQL. |
+- 项目 A vs 项目 B 的对比。
+- 框架、工具、平台的适用场景。
+- 技术选型结论。
+- 业务方案比较。
+- 架构复用经验。
+- 项目复盘后形成的长期知识。
 
-## How To Read The MySQL List
+### 放到 `skills/`
 
-If you want projects closest to `gin-vue-admin` and `RuoYi-Vue-Pro`, start with:
+适合保存“以后怎么做”：
 
-1. RuoYi-Vue-Pro
-2. gin-vue-admin
-3. RuoYi-Vue
-4. JeecgBoot
-5. GoAdmin
+- Agent 工作流程。
+- 提示词结构。
+- 检查清单。
+- 模型卡模板。
+- 可复用的项目规划方法。
 
-If you want Java enterprise admin scaffolds, start with:
+### 放到 `docs/`
 
-1. RuoYi-Vue-Pro
-2. RuoYi-Vue
-3. JeecgBoot
-4. Pig
-5. Guns
+适合保存某个主题的连续说明：
 
-If you want Go admin scaffolds similar to GVA, start with:
+- 一个业务方向的整体规划。
+- 多篇知识的整合版。
+- 需要按章节阅读的综合文档。
 
-1. gin-vue-admin
-2. GoAdmin
+## 写入原则
 
-## Notes
+新增内容时优先遵守：
 
-Appsmith and NocoDB are also well-known in the same general space, but they are better described as projects that can connect to PostgreSQL rather than projects whose own architecture is clearly PostgreSQL-first. They are useful references, but not first-choice examples for the PostgreSQL-specific question.
+1. **对比优先**：尽量写清楚“和谁比、差异是什么、适合什么场景”。
+2. **结论优先**：不要只堆资料，要写出自己的判断。
+3. **来源清楚**：说明知识来自项目实践、外部文档、代码阅读、AI 总结还是人工判断。
+4. **长期可用**：短期进度不要放这里，稳定判断才放这里。
+5. **项目事实回项目仓库**：具体项目当前状态、部署、Issue、PR 留在对应项目。
+6. **敏感信息不入库**：不保存 token、密码、服务器凭据、客户隐私和未授权数据。
+7. **索引要更新**：新增重要知识后，同步更新 `knowledge/README.md` 或 `skills/README.md`。
 
-## Related Decision For Gin Vue Admin
+## 当前快速入口
 
-For `gin-vue-admin`, the practical deployment recommendation remains:
+### Knowledge
 
-- Use MySQL 8.x as the primary database.
-- Keep Redis available for runtime cache/session/queue-style needs.
-- Do not choose MongoDB just because the project has AI-assisted features.
-- Consider PostgreSQL only if the surrounding product direction already benefits from PostgreSQL-specific capabilities.
+见 `knowledge/README.md`。
+
+已有内容包括：
+
+- AI 开发与 Agent 技能总结。
+- Java 生命周期与建模实践。
+- RuoYi-Vue-Pro / Yudao 相关知识。
+- 多语言站点模型卡。
+- 仓库定位与知识库组织方式说明。
+
+### Skills
+
+见 `skills/README.md`。
+
+已有内容包括：
+
+- 项目技能体系结构。
+- 需求模型卡模板。
+- 工程技能模式整理。
+
+## 和其他仓库的关系
+
+- `ai-project-operating-system`：定义 AI 项目如何用 GitHub、Issue、PR、Spec、ADR、Harness、CI 来运转。
+- `knowledge-skill-library`：保存项目对比、技术选型、业务理解和可复用技能，帮助自己和 AI 更快理解项目。
+- 具体业务仓库：保存该业务的代码、需求、部署、运行状态和业务专属文档。
+
+简单说：
+
+```text
+项目怎么运转        → ai-project-operating-system
+我对项目怎么理解    → knowledge-skill-library
+项目实际代码和状态  → 具体项目仓库
+```
