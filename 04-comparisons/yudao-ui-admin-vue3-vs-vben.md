@@ -16,12 +16,12 @@ tags: [yudao, ruoyi, vue3, vben, admin, frontend]
 - 如果目标是建设长期后台前端平台底座，且团队愿意投入 Vben Admin 5、monorepo、多 UI 体系的学习和治理成本，可以评估 `yudao-ui-admin-vben`。
 - 对新粮这类“先快速落业务模块”的场景，当前更建议继续走 `yudao-ui-admin-vue3`，不要一开始切到 `vben`。
 
-## 项目列表
+## 项目卡片
 
-| 项目 | 地址 | 定位 | 技术栈 / 工程形态 |
-| --- | --- | --- | --- |
-| `yudao-ui-admin-vue3` | https://gitee.com/yudaocode/yudao-ui-admin-vue3 | 芋道自研 / 传统主线 Vue3 管理后台 | Vue 3、Vite、TypeScript、Element Plus；单应用结构 |
-| `yudao-ui-admin-vben` | https://gitee.com/yudaocode/yudao-ui-admin-vben | 基于 Vben Admin 5 的芋道后台前端 | Vben Admin 5、Vue 3、Vite、Turbo monorepo；多 UI 应用 |
+先分别阅读两个项目主卡，再看本文的选型判断：
+
+- [[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode/yudao-ui-admin-vue3]]：芋道 Vue3 管理后台前端，单应用结构，偏业务快速二开。
+- [[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode/yudao-ui-admin-vben]]：基于 Vben Admin 5 的多 UI monorepo，偏长期平台化后台前端底座。
 
 ## 关键差异
 
@@ -68,5 +68,7 @@ tags: [yudao, ruoyi, vue3, vben, admin, frontend]
 
 ## 相关笔记
 
+- [[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode/yudao-ui-admin-vue3]]
+- [[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode/yudao-ui-admin-vben]]
 - [[04-comparisons/admin-scaffold-comparison|后台脚手架对比]]
-- [[01-projects/zhijiantianya--ruoyi-vue-pro|ruoyi-vue-pro]]
+- [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
