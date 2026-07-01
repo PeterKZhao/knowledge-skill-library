@@ -182,3 +182,4 @@ ruoyi-vue-pro/
 
 - [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/README|源码阅读索引]]
 - [[05-practice-labs/zhijiantianya--ruoyi-vue-pro/local-setup|本地运行实验]]
+- [[03-patterns/diy-page-runtime-boundary|DIY 页面运行时边界]]

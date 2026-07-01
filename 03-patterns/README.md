@@ -19,4 +19,5 @@
 
 | 模式 | 来源项目 | 适用场景 | 文档 |
 | --- | --- | --- | --- |
+| DIY 页面运行时边界 | `zhijiantianya/ruoyi-vue-pro` + `yudao-mall-uniapp` | 判断低代码/装修系统能否替代真实业务页面 | [[03-patterns/diy-page-runtime-boundary|DIY 页面运行时边界]] |
 | 待添加 | - | - | - |
