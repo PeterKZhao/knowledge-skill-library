@@ -1,17 +1,21 @@
 # ruoyi-vue-pro 源码阅读索引
 
 项目主卡：[[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]]
+特点卡：[[03-patterns/framework-characteristics/ruoyi-vue-pro|RuoYi/Yudao 特点]]
 
-## 阅读顺序
+## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Maven 多模块结构 | 待读 | `maven-module-structure.md` |
-| 2 | 启动流程 | 待读 | `startup-flow.md` |
-| 3 | 系统权限与菜单 | 待读 | `rbac-and-menu.md` |
-| 4 | 多租户模型 | 待读 | `tenant-model.md` |
-| 5 | 代码生成流程 | 待读 | `codegen-flow.md` |
-| 6 | 支付模块 | 待读 | `pay-module.md` |
+| 1 | Maven 多模块结构 | 初稿 | [[02-reading-notes/zhijiantianya--ruoyi-vue-pro/maven-module-structure|maven-module-structure]] |
+
+## 后续主题
+
+- 启动流程
+- 系统权限与菜单
+- 多租户模型
+- 代码生成流程
+- 支付模块
 
 ## 当前问题
 

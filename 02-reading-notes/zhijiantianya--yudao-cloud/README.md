@@ -1,18 +1,22 @@
 # yudao-cloud 源码阅读索引
 
 项目主卡：[[01-projects/zhijiantianya--yudao-cloud|zhijiantianya/yudao-cloud]]
+特点卡：[[03-patterns/framework-characteristics/yudao-cloud|Yudao Cloud 特点]]
 
-## 阅读顺序
+## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | 微服务模块地图 | 待读 | `microservice-module-map.md` |
-| 2 | Gateway 路由与入口 | 待读 | `gateway-routing.md` |
-| 3 | Nacos 配置与服务发现 | 待读 | `nacos-config-map.md` |
-| 4 | Gateway 到业务服务的认证链路 | 待读 | `auth-through-gateway.md` |
-| 5 | 系统服务、基础设施服务边界 | 待读 | `system-infra-boundary.md` |
-| 6 | Seata / MQ / XXL-Job 使用点 | 待读 | `distributed-components.md` |
-| 7 | 单体版模块到 Cloud 版模块映射 | 待读 | `monolith-to-cloud-map.md` |
+| 1 | 微服务模块地图 | 初稿 | [[02-reading-notes/zhijiantianya--yudao-cloud/microservice-module-map|microservice-module-map]] |
+
+## 后续主题
+
+- Gateway 路由与入口
+- Nacos 配置与服务发现
+- Gateway 到业务服务的认证链路
+- 系统服务、基础设施服务边界
+- Seata / MQ / XXL-Job 使用点
+- 单体版模块到 Cloud 版模块映射
 
 ## 当前问题
 
@@ -28,4 +32,3 @@
 - 涉及 Nacos、Seata、Sentinel、XXL-Job、MQ 时，必须记录配置文件路径。
 - 涉及调用链时，至少记录 Controller、Service、Mapper 或远程调用接口。
 - 不复制大段源码，只记录路径、类名、方法名和结论。
-

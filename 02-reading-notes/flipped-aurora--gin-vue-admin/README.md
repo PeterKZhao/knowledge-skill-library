@@ -1,18 +1,22 @@
 # gin-vue-admin 源码阅读索引
 
 项目主卡：[[01-projects/flipped-aurora--gin-vue-admin|flipped-aurora/gin-vue-admin]]
+特点卡：[[03-patterns/framework-characteristics/gin-vue-admin|gin-vue-admin 特点]]
 
-## 阅读顺序
+## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Go 后端项目结构 | 待读 | `go-project-structure.md` |
-| 2 | 后端启动链路 | 待读 | `server-startup-flow.md` |
-| 3 | JWT / RBAC / Casbin 权限 | 待读 | `auth-rbac-casbin.md` |
-| 4 | 前端动态路由和权限 | 待读 | `dynamic-router-permission.md` |
-| 5 | 代码生成器 | 待读 | `codegen-flow.md` |
-| 6 | 表单生成器 | 待读 | `form-generator.md` |
-| 7 | AI / MCP 辅助开发 | 待读 | `ai-assisted-development.md` |
+| 1 | Go 后端项目结构 | 初稿 | [[02-reading-notes/flipped-aurora--gin-vue-admin/go-project-structure|go-project-structure]] |
+
+## 后续主题
+
+- 后端启动链路
+- JWT / RBAC / Casbin 权限
+- 前端动态路由和权限
+- 代码生成器
+- 表单生成器
+- AI / MCP 辅助开发
 
 ## 当前问题
 

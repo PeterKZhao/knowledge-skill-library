@@ -1,18 +1,22 @@
 # Directus 源码阅读索引
 
 项目主卡：[[01-projects/directus--directus|directus/directus]]
+特点卡：[[03-patterns/framework-characteristics/directus|Directus 特点]]
 
-## 阅读顺序
+## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Monorepo 结构 | 待读 | `monorepo-structure.md` |
-| 2 | 运行入口 | 待读 | `runtime-entrypoints.md` |
-| 3 | 数据库优先模型 | 待读 | `database-first-model.md` |
-| 4 | 元数据和权限 | 待读 | `metadata-and-permissions.md` |
-| 5 | Admin App 架构 | 待读 | `admin-app-architecture.md` |
-| 6 | SDK 和 API 契约 | 待读 | `sdk-and-api-contract.md` |
-| 7 | 扩展系统 | 待读 | `extension-system.md` |
+| 1 | Monorepo 结构 | 初稿 | [[02-reading-notes/directus--directus/monorepo-structure|monorepo-structure]] |
+
+## 后续主题
+
+- 运行入口
+- 数据库优先模型
+- 元数据和权限
+- Admin App 架构
+- SDK 和 API 契约
+- 扩展系统
 
 ## 当前问题
 

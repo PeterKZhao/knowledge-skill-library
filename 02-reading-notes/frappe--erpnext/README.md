@@ -1,18 +1,22 @@
 # ERPNext 源码阅读索引
 
 项目主卡：[[01-projects/frappe--erpnext|frappe/erpnext]]
+特点卡：[[03-patterns/framework-characteristics/erpnext|ERPNext 特点]]
 
-## 阅读顺序
+## 已有笔记
 
 | 顺序 | 主题 | 状态 | 笔记 |
 | --- | --- | --- | --- |
-| 1 | Frappe app 结构 | 待读 | `frappe-app-structure.md` |
-| 2 | hooks 与事件机制 | 待读 | `hooks-and-events.md` |
-| 3 | DocType 元数据模型 | 待读 | `doctype-model.md` |
-| 4 | Document 生命周期 | 待读 | `document-lifecycle.md` |
-| 5 | Sales to Cash | 待读 | `sales-to-cash.md` |
-| 6 | Procure to Pay | 待读 | `procure-to-pay.md` |
-| 7 | Stock Ledger 与 GL Entry | 待读 | `stock-ledger-and-gl.md` |
+| 1 | Frappe app 结构 | 初稿 | [[02-reading-notes/frappe--erpnext/frappe-app-structure|frappe-app-structure]] |
+
+## 后续主题
+
+- hooks 与事件机制
+- DocType 元数据模型
+- Document 生命周期
+- Sales to Cash
+- Procure to Pay
+- Stock Ledger 与 GL Entry
 
 ## 当前问题
 
