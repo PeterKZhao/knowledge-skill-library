@@ -33,6 +33,7 @@ ruanyf--weekly.md
 | 项目 | 领域 | 技术栈 | 学习状态 | 主卡 |
 | --- | --- | --- | --- | --- |
 | zhijiantianya/ruoyi-vue-pro | Java 企业后台 / SaaS / 业务中台 | Spring Boot、MyBatis Plus、Vue、Maven 多模块 | 已建卡 | [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya--ruoyi-vue-pro]] |
+| zhijiantianya/yudao-cloud | Java 企业后台 / Spring Cloud 微服务 | Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Seata、Vue | 已建卡 | [[01-projects/zhijiantianya--yudao-cloud|zhijiantianya--yudao-cloud]] |
 | yudaocode/yudao-ui-admin-vue3 | Yudao / RuoYi Vue3 管理后台前端 | Vue3、Vite、TypeScript、Element Plus | 已建卡 | [[01-projects/yudaocode--yudao-ui-admin-vue3|yudaocode--yudao-ui-admin-vue3]] |
 | yudaocode/yudao-ui-admin-vben | Vben Admin 5 后台前端 / 多 UI monorepo | Vue3、Vite、Turbo、pnpm workspace、Vben Admin 5 | 已建卡 | [[01-projects/yudaocode--yudao-ui-admin-vben|yudaocode--yudao-ui-admin-vben]] |
 | frappe/erpnext | ERP / 业务套件 / 元数据驱动平台 | Python、Frappe Framework、DocType、JavaScript | 已建卡 | [[01-projects/frappe--erpnext|frappe--erpnext]] |

@@ -1,7 +1,7 @@
 ---
 type: home
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 ---
 
 # Knowledge Skill Library
@@ -22,6 +22,7 @@ updated: 2026-06-30
 ## 已收项目
 
 - [[01-projects/zhijiantianya--ruoyi-vue-pro|RuoYi/Yudao]]
+- [[01-projects/zhijiantianya--yudao-cloud|Yudao Cloud]]
 - [[01-projects/frappe--erpnext|ERPNext]]
 - [[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
 - [[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
@@ -31,6 +32,7 @@ updated: 2026-06-30
 ## 对比
 
 - [[04-comparisons/ruoyi-vue-pro-vs-erpnext|RuoYi/Yudao 与 ERPNext 对比]]
+- [[04-comparisons/yudao-monolith-vs-cloud|Yudao 单体版与 Cloud 版对比]]
 - [[04-comparisons/admin-scaffold-comparison|后台脚手架对比]]
 - [[04-comparisons/database-first-admin-platforms|后台/CMS/API 平台对比]]
 - [[04-comparisons/pairwise-backend-comparisons|后端项目一对一对比]]

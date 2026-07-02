@@ -3,6 +3,7 @@ type: comparison
 status: draft
 projects:
   - zhijiantianya/ruoyi-vue-pro
+  - zhijiantianya/yudao-cloud
   - jeecgboot/JeecgBoot
   - flipped-aurora/gin-vue-admin
   - frappe/erpnext
@@ -21,6 +22,7 @@ updated: 2026-07-01
 | 简称 | 项目 | 核心定位 | 技术栈 | License |
 | --- | --- | --- | --- | --- |
 | RuoYi/Yudao | [[01-projects/zhijiantianya--ruoyi-vue-pro|zhijiantianya/ruoyi-vue-pro]] | Java 企业后台 / SaaS / 业务中台 | Spring Boot、MyBatis Plus、Vue | MIT |
+| Yudao Cloud | [[01-projects/zhijiantianya--yudao-cloud|zhijiantianya/yudao-cloud]] | Java 企业后台 / Spring Cloud 微服务 | Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Seata | MIT |
 | JeecgBoot | [[01-projects/jeecgboot--JeecgBoot|jeecgboot/JeecgBoot]] | Java 低代码 / 零代码 / AI 辅助后台平台 | Spring Boot、MyBatis Plus、Shiro、Vue3 | Apache-2.0 |
 | gin-vue-admin | [[01-projects/flipped-aurora--gin-vue-admin|flipped-aurora/gin-vue-admin]] | Go + Vue 后台脚手架 | Gin、GORM、Casbin、JWT、Vue3 | Business Source License 1.1 |
 | ERPNext | [[01-projects/frappe--erpnext|frappe/erpnext]] | ERP 业务套件 | Python、Frappe、DocType | GPL-3.0 |
@@ -30,11 +32,26 @@ updated: 2026-07-01
 ## 总体结论
 
 - 如果目标是国内 Java 企业后台：先看 RuoYi/Yudao。
+- 如果目标是 Java 微服务后台：在 RuoYi/Yudao 之后看 Yudao Cloud。
 - 如果目标是 Java 低代码、在线表单、报表、AI 生成系统：先看 JeecgBoot。
 - 如果目标是 Go 技术栈的后台脚手架：先看 gin-vue-admin。
 - 如果目标是完整 ERP、财务、库存、业务单据：先看 ERPNext。
 - 如果目标是已有数据库快速变后台和 API：先看 Directus。
 - 如果目标是 TypeScript / Next.js 全栈后台和 CMS：先看 Payload。
+
+## RuoYi/Yudao vs Yudao Cloud
+
+| 维度 | RuoYi/Yudao | Yudao Cloud |
+| --- | --- | --- |
+| 核心范式 | 单体多模块企业后台 | Spring Cloud Alibaba 微服务后台 |
+| 技术路线 | Spring Boot + MyBatis Plus + Maven 多模块 | Gateway + Nacos + Spring Cloud Alibaba + 业务服务 |
+| 强项 | 启动简单、代码路径集中、适合建立 Yudao 业务地图 | 网关、注册配置、服务治理、分布式事务、任务调度、MQ |
+| 学习重点 | RBAC、多租户、代码生成、业务模块组织 | 服务拆分、Gateway 鉴权、Nacos 配置、Seata/MQ/XXL-Job 使用边界 |
+| 取舍 | 更适合先读和二次开发入门 | 更适合进阶学习微服务化落地 |
+
+选 RuoYi/Yudao：你要快速理解 Yudao 的后台业务模型和代码组织。
+
+选 Yudao Cloud：你已经理解单体版，希望学习同一套业务能力如何进入微服务运行时。
 
 ## RuoYi/Yudao vs JeecgBoot
 
@@ -50,6 +67,20 @@ updated: 2026-07-01
 
 选 JeecgBoot：你更关心低代码、在线配置、报表、表单、AI 生成系统，以及减少重复开发。
 
+## Yudao Cloud vs JeecgBoot
+
+| 维度 | Yudao Cloud | JeecgBoot |
+| --- | --- | --- |
+| 核心方向 | Java 微服务后台 | Java 低代码/零代码后台平台 |
+| 架构复杂度 | 高，关注网关、注册配置、服务治理 | 中高，关注低代码引擎、在线表单、报表和平台能力 |
+| 强项 | Spring Cloud Alibaba 全链路学习 | 业务系统快速生成和在线配置 |
+| 学习重点 | 分布式后台工程组织 | 低代码平台如何抽象表单、报表、流程、代码生成 |
+| 取舍 | 更像微服务架构样本 | 更像低代码生产力平台 |
+
+选 Yudao Cloud：你要补齐 Spring Cloud Alibaba 微服务经验。
+
+选 JeecgBoot：你要研究低代码平台能力和企业后台配置化。
+
 ## RuoYi/Yudao vs gin-vue-admin
 
 | 维度 | RuoYi/Yudao | gin-vue-admin |
@@ -63,6 +94,20 @@ updated: 2026-07-01
 选 RuoYi/Yudao：你在 Java 生态，重视企业后台、复杂业务模块、租户和数据权限。
 
 选 gin-vue-admin：你要学习 Go 后台管理系统，关注 Gin/GORM/Casbin 的工程组织。
+
+## Yudao Cloud vs gin-vue-admin
+
+| 维度 | Yudao Cloud | gin-vue-admin |
+| --- | --- | --- |
+| 后端语言 | Java | Go |
+| 架构形态 | 微服务后台 | 单体后台脚手架 |
+| 核心组件 | Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Seata | Gin、GORM、Casbin、JWT |
+| 学习重点 | 微服务治理和分布式组件 | Go Web 服务分层和权限模型 |
+| 适合场景 | Java 微服务企业后台 | Go 技术栈后台系统 |
+
+选 Yudao Cloud：你在 Java 生态，想学习微服务后台落地。
+
+选 gin-vue-admin：你要学习 Go 后台脚手架和 Casbin 权限。
 
 ## RuoYi/Yudao vs ERPNext
 
@@ -78,6 +123,20 @@ updated: 2026-07-01
 
 选 ERPNext：你要学习真实 ERP 业务、单据生命周期、会计分录、库存流水和 Frappe 元数据模型。
 
+## Yudao Cloud vs ERPNext
+
+| 维度 | Yudao Cloud | ERPNext |
+| --- | --- | --- |
+| 核心定位 | 微服务后台开发底座 | 完整 ERP 产品 |
+| 建模方式 | Java 微服务 + DO/VO/Service/Mapper | Frappe DocType + Python Controller |
+| 业务成熟度 | 模块丰富，但仍偏开发平台 | 财务、库存、采购、销售、制造闭环更成熟 |
+| 学习重点 | 分布式后台架构 | ERP 业务规则和元数据模型 |
+| License | MIT | GPL-3.0 |
+
+选 Yudao Cloud：你要学习 Java 微服务后台怎么组织。
+
+选 ERPNext：你要学习 ERP 业务内核和 Frappe 平台。
+
 ## RuoYi/Yudao vs Directus
 
 | 维度 | RuoYi/Yudao | Directus |
@@ -92,6 +151,20 @@ updated: 2026-07-01
 
 选 Directus：已有数据库，想快速生成后台、API、权限和管理界面。
 
+## Yudao Cloud vs Directus
+
+| 维度 | Yudao Cloud | Directus |
+| --- | --- | --- |
+| 起点 | Java 微服务工程 | 现有数据库 |
+| 产物 | Gateway、业务服务、后台 API、管理端 | Admin、REST/GraphQL API、权限、SDK |
+| 定制方式 | 写 Java/Vue 代码和微服务配置 | 元数据配置和扩展 |
+| 复杂度来源 | 分布式运行时和服务治理 | 数据权限、元数据、扩展体系 |
+| 适合场景 | 企业后台微服务化 | 快速数据后台和 API 平台 |
+
+选 Yudao Cloud：业务逻辑重，需要微服务架构和 Java 代码掌控。
+
+选 Directus：数据库已经存在，目标是快速产品化为后台和 API。
+
 ## RuoYi/Yudao vs Payload
 
 | 维度 | RuoYi/Yudao | Payload |
@@ -105,6 +178,20 @@ updated: 2026-07-01
 选 RuoYi/Yudao：你要学习国内 Java 后台工程化。
 
 选 Payload：你要学习 TypeScript / Next.js 里如何内嵌后台、CMS、API 和 Admin Panel。
+
+## Yudao Cloud vs Payload
+
+| 维度 | Yudao Cloud | Payload |
+| --- | --- | --- |
+| 技术栈 | Java + Spring Cloud + Vue | TypeScript + Next.js |
+| 后端形态 | 多服务微服务系统 | Next.js 全栈后台/CMS 框架 |
+| Admin | 配套 Vue 管理端生态 | 内置 Admin Panel |
+| 学习重点 | 企业后台微服务化 | TS 类型安全、Collections、Hooks、Access |
+| License | MIT | MIT |
+
+选 Yudao Cloud：你要学习 Java 微服务和企业后台服务边界。
+
+选 Payload：你要在 TS/Next.js 中构建后台、CMS 和 API。
 
 ## JeecgBoot vs gin-vue-admin
 
@@ -251,8 +338,9 @@ updated: 2026-07-01
 如果按“后台系统能力”学习：
 
 1. [[01-projects/zhijiantianya--ruoyi-vue-pro|RuoYi/Yudao]]
-2. [[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
-3. [[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
+2. [[01-projects/zhijiantianya--yudao-cloud|Yudao Cloud]]
+3. [[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
+4. [[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
 
 如果按“业务平台和元数据”学习：
 
@@ -263,8 +351,9 @@ updated: 2026-07-01
 如果按“选型对照”学习：
 
 1. Java 常规后台：[[01-projects/zhijiantianya--ruoyi-vue-pro|RuoYi/Yudao]]
-2. Java 低代码：[[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
-3. Go 后台：[[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
-4. ERP 业务套件：[[01-projects/frappe--erpnext|ERPNext]]
-5. 数据库优先后台：[[01-projects/directus--directus|Directus]]
-6. TS/Next 后台：[[01-projects/payloadcms--payload|Payload]]
+2. Java 微服务后台：[[01-projects/zhijiantianya--yudao-cloud|Yudao Cloud]]
+3. Java 低代码：[[01-projects/jeecgboot--JeecgBoot|JeecgBoot]]
+4. Go 后台：[[01-projects/flipped-aurora--gin-vue-admin|gin-vue-admin]]
+5. ERP 业务套件：[[01-projects/frappe--erpnext|ERPNext]]
+6. 数据库优先后台：[[01-projects/directus--directus|Directus]]
+7. TS/Next 后台：[[01-projects/payloadcms--payload|Payload]]
