@@ -1,7 +1,7 @@
 ---
 type: home
 created: 2026-06-30
-updated: 2026-07-01
+updated: 2026-07-02
 ---
 
 # Knowledge Skill Library
@@ -14,6 +14,7 @@ updated: 2026-07-01
 - [[01-projects/README|Projects]]
 - [[02-reading-notes/README|Reading Notes]]
 - [[03-patterns/README|Patterns]]
+- [[03-patterns/framework-characteristics/README|框架特点总览]]
 - [[04-comparisons/README|Comparisons]]
 - [[05-practice-labs/README|Practice Labs]]
 - [[06-glossary/README|Glossary]]
